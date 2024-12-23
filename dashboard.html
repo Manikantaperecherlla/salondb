@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salon Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Salon Dashboard</h2>
+        <form action="add_transaction.php" method="POST">
+            <input type="text" name="service" placeholder="Service" required>
+            <input type="number" name="amount" placeholder="Amount" required>
+            <button type="submit">Add Transaction</button>
+        </form>
+        <h3>Transactions</h3>
+        <div id="transactions">
+            <!-- Transactions will be displayed here -->
+        </div>
+    </div>
+</body>
+</html>
